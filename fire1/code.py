@@ -7,16 +7,17 @@ import time, board, neopixel, rainbowio
 
 import fire_leds
 
-fire_color = 0xff5500   # what color fire to make
-fire_fade = (-5,-5,-5)  # how much to fade R,G,B each udpate
+fire_color = 0xff5500
+fire_fade = (-2,-2,-2)  # how much to fade R,G,B each udpate
 
-num_leds = 64 * 1   # how many LEDs you got?
-led_pin = board.RX  # which pin LEDs are hooked up to
+num_leds = 64 * 1
+led_pin = board.GP28
 
 leds = neopixel.NeoPixel(led_pin, num_leds, brightness=0.4, auto_write=False)
 
 # make up our fire
-fire_leds = fire_leds.FireLEDs(leds, fade_by=fire_fade, update_rate=0.01 )
+#fire_leds = fire_leds.FireLEDs(leds, fade_by=fire_fade, fire_rate=0.1 )
+fire_leds = fire_leds.FireLEDs(leds, fade_by=fire_fade)
 
 while True:
     #fire_leds.update( rainbowio.colorwheel(time.monotonic()*40), 3 )  # rainbow fire
