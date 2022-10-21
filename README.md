@@ -10,5 +10,7 @@ A growing list of LED effects. So far:
 
 * ulab_speedup -- how to use ulab (CircuitPython Numpy) to speed up LED animations by 10x
 
+  Also, see [my write up on it here](https://todbot.com/blog/2022/10/21/speed-up-circuitpython-led-animations-10x/)
+
   https://user-images.githubusercontent.com/274093/197255523-daec8bce-d1b5-4f5f-9d76-aac2ad72de7a.mp4
 
