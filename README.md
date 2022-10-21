@@ -7,3 +7,5 @@ A growing list of LED effects. So far:
 
 * fire1 -- simple fire simulation, uses ulab
   <img src="./docs/fire1clip1.gif" />
+
+* ulab_speedup -- how to use ulab (CircuitPython Numpy) to speed up LED animations
